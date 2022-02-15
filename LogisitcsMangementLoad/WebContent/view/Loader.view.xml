@@ -12,8 +12,8 @@
 					mode="SingleSelectMaster">
 
 					<items>
-						<CustomListItem class="card">
-							<Toolbar class="CardHDR">
+						<CustomListItem class="Plancard">
+							<Toolbar class="PlanCardHDR">
 								<Text text="Plan id:" class="bold title " />
 								<Text text="{plan>ZuphrLpid}" class="bold" />
 							
@@ -37,11 +37,11 @@
 									class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
 									<HBox>
 										<Text text="Destination: " />
-										<Text text="{plan>ZuphrStation}" class="cardText" />
+										<Text text="{plan>ZuphrStation}" class="PlancardText" />
 									</HBox>
 									<HBox>
 										<Text text="Vessel: " />
-										<Text text="{plan>ZuphrRqtype}" class="cardText" />
+										<Text text="{plan>ZuphrRqtype}" class="PlancardText" />
 									</HBox>
 									<HBox>
 										<Text text="Date: "/>
@@ -56,7 +56,6 @@
 
 					</items>
 				</List>
-
 
 			</Page>
 		</masterPages>
