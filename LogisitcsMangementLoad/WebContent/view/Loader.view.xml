@@ -1,0 +1,85 @@
+<mvc:View
+	controllerName="logisticsmanagementsystem.controller.Loader"
+	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+
+	<SplitApp initialMaster="master" initialDetail="detail">
+		<masterPages>
+			<Page id="master" title="Plans" showNavButton="true"
+				navButtonPress="onNavButton">
+
+				<List id="invoiceList" class="sapUiResponsiveMargin"
+					width="auto" items="{plan>/Plan}" selectionChange="onPlanSelects"
+					mode="SingleSelectMaster">
+
+					<items>
+						<CustomListItem class="card">
+							<Toolbar class="CardHDR">
+								<Text text="Plan id:" class="bold title " />
+								<Text text="{plan>ZuphrLpid}" class="bold" />
+							
+				
+					<ObjectStatus class="sapUiLargeMarginBegin"
+					 text="
+						{plan>ZuphrStatus}
+					"
+					state="{
+					path: 'plan>ZuphrStatus',
+						formatter: '.formatter.statusText'
+					}"
+					
+					/>
+			
+				
+							</Toolbar>
+
+							<HBox>
+								<VBox
+									class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+									<HBox>
+										<Text text="Destination: " />
+										<Text text="{plan>ZuphrStation}" class="cardText" />
+									</HBox>
+									<HBox>
+										<Text text="Vessel: " />
+										<Text text="{plan>ZuphrRqtype}" class="cardText" />
+									</HBox>
+									<HBox>
+										<Text text="Date: "/>
+									</HBox>
+									<HBox>
+									<Text text="Time: "/>
+									</HBox>
+								</VBox>
+							</HBox>
+
+						</CustomListItem>
+
+					</items>
+				</List>
+
+
+			</Page>
+		</masterPages>
+
+		<detailPages>
+			<Page id="detail" title="{selectedPlan>/ZuphrLpid}">
+				<List id="detailList" title="hi" items="{LPConfitems>/}">
+					<items>
+						<CustomListItem>
+							<HBox>
+								<VBox
+									class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom">
+									<Label text="{LPConfitems>ZuphrDescrip}" />
+
+								</VBox>
+							</HBox>
+						</CustomListItem>
+					</items>
+
+				</List>
+
+			</Page>
+		</detailPages>
+	</SplitApp>
+
+</mvc:View>

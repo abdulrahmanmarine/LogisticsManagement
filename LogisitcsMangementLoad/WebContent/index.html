@@ -1,22 +1,21 @@
-<!DOCTYPE HTML>
-<html>
+	<!DOCTYPE html>
+	<html>
 	<head>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
-
-		<script src="resources/sap-ui-core.js"
-				id="sap-ui-bootstrap"
-				data-sap-ui-libs="sap.m"
-				data-sap-ui-theme="sap_bluecrystal">
+		<meta charset="utf-8">
+		<title>SAPUI5 Walkthrough et</title>
+		<script
+			id="sap-ui-bootstrap"
+			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-resourceroots='{
+				"logisticsmanagementsystem": "./"
+			}'
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-async="true">
 		</script>
-		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
-
-		<script>
-			
-		</script>
-
 	</head>
-	<body class="sapUiBody" role="application">
-		<div id="contenting24"></div>
+	<body class="sapUiBody" id="content">
+		<div data-sap-ui-component data-name="logisticsmanagementsystem" data-id="container" data-settings='{"id" : "logistics_management"}'></div>
 	</body>
-</html>
+	</html>
