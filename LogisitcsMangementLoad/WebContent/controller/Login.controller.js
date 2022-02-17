@@ -13,6 +13,14 @@ sap.ui.define([
           oRouter.navTo("Loader")
 
 
-      }
+      },
+	   
+	      onDispatcher : function () {
+	          // show a native JavaScript alert
+	           var oRouter = this.getOwnerComponent().getRouter();
+	           oRouter.navTo("Dispatcher")
+
+
+	       }
    });
 });

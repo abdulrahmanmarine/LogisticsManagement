@@ -1,0 +1,17 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" 
+   xmlns:l="sap.ui.layout">
+   <Dialog
+      id="helloDialog"
+      title="Assign Driver and Vehicle"
+      contentWidth="35%"
+      contentHeight="30%"
+      draggable="true"
+      resizable="true">
+
+<Text text="{SelectedItem>/ZuphrStatus}"/>
+   </Dialog>
+   
+
+</core:FragmentDefinition>

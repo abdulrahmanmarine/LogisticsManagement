@@ -94,6 +94,13 @@
 					"name": "Loader",
 					"viewName": "Loader",
 					"targetAggegation": "pages"
+				},
+				
+				{
+					"pattern": "Dispatcher",
+					"name": "Dispatcher",
+					"viewName": "Dispatcher",
+					"targetAggegation": "pages"
 				}
 			]
 		}

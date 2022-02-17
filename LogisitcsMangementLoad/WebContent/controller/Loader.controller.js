@@ -1,7 +1,8 @@
 sap.ui.define([
    "sap/ui/core/mvc/Controller",
-   "../model/formatter"
-], function (Controller, formatter) {
+   "../model/formatter",
+   "sap/ui/core/routing/History"
+], function (Controller, formatter, History) {
    "use strict";
    return Controller.extend("logisticsmanagementsystem.controller.Loader", {
 	   formatter: formatter,
@@ -25,6 +26,21 @@ sap.ui.define([
     	   this.getView().setModel(oItems, "LPConfitems");
     	   
 
+      },
+      
+      onNavButton: function(){
+    	  
+    	  var oHistory = History.getInstance();
+    	  
+    	  var sPreviousHash = oHistory.getPreviousHash();
+    	  
+    	  if(sPreviousHash !== undefined){
+    		  
+    		  window.history.go(-1);
+    	  }else{
+	           var oRouter = this.getOwnerComponent().getRouter();
+	           oRouter.navTo("Login")
+    	  }
       }
    });
 });

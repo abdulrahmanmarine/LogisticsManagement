@@ -1,11 +1,11 @@
 <mvc:View
-	controllerName="logisticsmanagementsystem.controller.Loader"
+	controllerName="logisticsmanagementsystem.controller.Dispatcher"
 	xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
 	xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
 
 	<SplitApp initialMaster="master" initialDetail="detail">
 		<masterPages>
-			<Page id="master" title="Loader Plans" showNavButton="true"
+			<Page id="master2" title="Dispatcher Plans" showNavButton="true"
 				navButtonPress="onNavButton">
 
 				<List id="invoiceList" class="sapUiResponsiveMargin"
@@ -119,8 +119,7 @@
 							<SearchField width="80%" search="onSearch" />
 
 							<ToolbarSpacer />
-							<Button id="LoadAllButton" icon="sap-icon://accept"
-								type="Emphasized" text="Load All" />
+
 
 						</Toolbar>
 					</headerToolbar>
@@ -166,7 +165,9 @@
 							<Text text="{LPConfitems>ZuphrMblpo}" />
 							<Text text="{LPConfitems>ZuphrDescrip}" />
 							<Text text="{LPConfitems>ZuphrStatus}" />
-							
+							<Button id="assignmentButton" press="onOpenAssignment" text="Assign"
+								class="sapUiSmallMarginEnd" icon="sap-icon://inventory" />
+
 						</ColumnListItem>
 					</items>
 
