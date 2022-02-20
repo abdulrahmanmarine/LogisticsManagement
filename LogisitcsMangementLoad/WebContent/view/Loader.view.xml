@@ -125,48 +125,63 @@
 						</Toolbar>
 					</headerToolbar>
 					<columns>
-						<Column>
+						<Column >
 							<header>
 								<Text text="Image" class="bold" />
 							</header>
 						</Column>
 
-						<Column>
+						<Column  width="100px" hAlign="Center">
 							<header>
-								<Text text="Equipment ID" class="bold" />
+								<Text text="Equipment ID" class="bold"  />
 							</header>
 						</Column>
 
-						<Column>
+						<Column hAlign="Center">
 							<header>
 								<Text text="Description" class="bold" />
 							</header>
 						</Column>
 
-						<Column>
+						<Column  width="100px" hAlign="Center">
 							<header>
-								<Text text="Status" class="bold" />
+								<Text text="Status" class="bold"  />
 							</header>
 						</Column>
 
-						<Column>
-							<header>
-								<Text text="Action" class="bold" />
+						<Column hAlign="Center">
+							<header >
+								<Text text="Action" class="bold"    />
 							</header>
 						</Column>
 
 
 					</columns>
 
-
 					<items>
 
-						<ColumnListItem vAlign="Middle">
+						<ColumnListItem vAlign="Middle" >
 							<Image src="{LPConfitems>ZuphrContents}" width="4rem" />
 							<Text text="{LPConfitems>ZuphrMblpo}" />
 							<Text text="{LPConfitems>ZuphrDescrip}" />
 							<Text text="{LPConfitems>ZuphrStatus}" />
 							
+			            <FlexBox alignItems="Center" vAlign="Middle" id="LoaderButtons">
+                    <items>
+                      <VBox>			 
+			            <Button id="LoadButton" icon="sap-icon://accept" text="Load"  class="ButtonLoader"        press=".onAlert(${$source>/text}) "/>
+				       <Button id="UnLoadButton" icon="sap-icon://decline" text="UnLoad"  class="ButtonUnLoader"  press=".onAlert(${$source>/text}) "/>
+                     </VBox>
+    
+  	                   <VBox>           
+					   <Button id="ProcessButton" icon="sap-icon://in-progress"  text="Process"  class="ButtonProcess"      press=".onAlert(${$source>/text})"/>
+					   <Button id="NotFoundButton" icon="sap-icon://question-mark" text="NotFound"   class="ButtonNotFound" press=".onAlert(${$source>/text})" /> 			
+	                 </VBox>	
+		
+                   </items>
+                 </FlexBox>
+			
+				
 						</ColumnListItem>
 					</items>
 

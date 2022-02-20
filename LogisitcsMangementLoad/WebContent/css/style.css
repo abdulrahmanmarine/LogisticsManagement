@@ -75,9 +75,77 @@ background: linear-gradient(98deg, rgba(0,51,160,0.33985469187675066) 0%, rgba(2
     --Gray_25:#C0C0C0;
     --Gray_15:#DADADA;
     --red:#B55454;
+    --yellow:#fdff8f;
     --white:#ffffff;
     --black:#000000;
 }
+
+
+.ButtonLoader>.sapMBtnInner {
+
+background-color:var(--SA_Dark_Green); 
+background-image: none;
+text-shadow: none;
+color: #fff;
+border-radius:10%;
+outline: medium none !important;
+width: 120px;
+margin-right: 10px;
+margin-left: 10px;
+
+
+}
+
+
+.ButtonLoader > .sapMBtnHoverable {
+border-color:var(--SA_Light_Green);
+}
+
+
+.ButtonUnLoader>.sapMBtnInner {
+
+background-color:var(--red); 
+background-image: none;
+text-shadow: none;
+color: #fff;
+width: 120px;
+border-radius:10%;
+outline: medium none !important;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
+.ButtonProcess>.sapMBtnInner {
+
+background-color:var(--yellow); 
+background-image: none;
+text-shadow: none;
+color: var(--black);
+border-radius:10%;
+width: 120px;
+outline: medium none !important;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
+
+
+.ButtonNotFound>.sapMBtnInner {
+
+background-color:var(--Gray_25); 
+background-image: none;
+text-shadow: none;
+width: 120px;
+color: #fff;
+border-radius:10%;
+outline: medium none !important;
+margin-right: 10px;
+margin-left: 10px;
+
+}
+
 
 
 

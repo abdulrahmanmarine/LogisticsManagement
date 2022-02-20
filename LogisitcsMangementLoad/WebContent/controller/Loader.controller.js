@@ -42,5 +42,22 @@ sap.ui.define([
 	           oRouter.navTo("Login")
     	  }
       }
+      ,
+     
+      
+      onAlert: function(sVal) {
+    	  
+    	  if(sVal== "Load"){
+    		    alert("Clicked " + " with value " + sVal);
+    	  }else  if(sVal== "UnLoad"){
+    		    alert("Clicked " + " with value " + sVal);
+    	  }else  if(sVal== "Process"){
+    		    alert("Clicked " + " with value " + sVal);
+    	  }else  if(sVal== "NotFound"){
+    		    alert("Clicked " + " with value " + sVal);
+    	  }
+      
+          
+        }
    });
 });
