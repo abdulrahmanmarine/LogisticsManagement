@@ -169,7 +169,7 @@
 			            <FlexBox alignItems="Center" vAlign="Middle" id="LoaderButtons">
                     <items>
                       <VBox>			 
-			            <Button id="LoadButton" icon="sap-icon://accept" text="Load"  class="ButtonLoader"        press=".onAlert(${$source>/text}) "/>
+			            <Button id="LoadButton" icon="sap-icon://accept" text="Load"  class="ButtonLoader"  press=".onAlert(${$source>/text}) "/>
 				       <Button id="UnLoadButton" icon="sap-icon://decline" text="UnLoad"  class="ButtonUnLoader"  press=".onAlert(${$source>/text}) "/>
                      </VBox>
     
