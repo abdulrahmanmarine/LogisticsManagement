@@ -60,5 +60,29 @@ sap.ui.define([
     		    alert("Clicked " + " with value " + sVal);
     	  }
         }
+      ,
+    
+      onlocation: function() {
+    	  
+    	  alert("Clicked LOCATION with value ");
+        },
+        
+        onChat: function() {
+      	  
+        	 alert("Clicked Chat with value ");
+        },
+        
+        
+        onAddImage: function() {
+      	  
+        	 alert("Clicked Image with value ");
+        },
+      
+      
+
+        
+        
+        
+        
    });
 });

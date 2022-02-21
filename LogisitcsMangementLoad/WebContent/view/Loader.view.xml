@@ -166,7 +166,7 @@
 							<Text text="{LPConfitems>ZuphrDescrip}" />
 							<Text text="{LPConfitems>ZuphrStatus}" />
 							
-			            <FlexBox alignItems="Center" vAlign="Middle" id="LoaderButtons">
+			            <FlexBox alignItems="Center" id="LoaderButtons">
                     <items>
                       <VBox>			 
 			            <Button id="LoadButton" icon="sap-icon://accept" text="Load"  class="ButtonLoader"  press=".onAlert(${$source>/text}) "/>
@@ -176,8 +176,18 @@
   	                   <VBox>           
 					   <Button id="ProcessButton" icon="sap-icon://in-progress"  text="Process"  class="ButtonProcess"      press=".onAlert(${$source>/text})"/>
 					   <Button id="NotFoundButton" icon="sap-icon://question-mark" text="NotFound"   class="ButtonNotFound" press=".onAlert(${$source>/text})" /> 			
-	                 </VBox>	
-		
+	                </VBox>	 
+	                
+	                   <VBox   class="listing"> 
+	           
+	                      <Button enabled="true" icon="sap-icon://functional-location" class="imageloader"  press=".onlocation()" />              
+                          <Button enabled="true" icon="sap-icon://action" class="imageloader"  press=".onChat()" />              
+                          <Button enabled="true" icon="sap-icon://add-photo" class="imageloader" press=".onAddImage()" />              
+    
+					 </VBox>	     
+				
+	                 
+	                 
                    </items>
                  </FlexBox>
 			

@@ -64,6 +64,19 @@ background: linear-gradient(98deg, rgba(0,51,160,0.33985469187675066) 0%, rgba(2
 }
 
 
+.sapMBtn.increaseFont .sapMBtnIcon {
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+.listing{
+	
+margin-left:5px;	
+	
+}
+
+
 :root {
 
     --SA_Light_Green:#84BD00;
@@ -90,8 +103,8 @@ color: #fff;
 border-radius:10%;
 outline: medium none !important;
 width: 120px;
-margin-right: 10px;
-margin-left: 10px;
+margin-right: 2px;
+margin-left: 2px;
 
 
 }
@@ -112,8 +125,9 @@ color: #fff;
 width: 120px;
 border-radius:10%;
 outline: medium none !important;
-margin-right: 10px;
-margin-left: 10px;
+margin-right: 2px;
+margin-left: 2px;
+
 }
 
 .ButtonProcess>.sapMBtnInner {
@@ -124,8 +138,8 @@ color: var(--black);
 border-radius:10%;
 width: 120px;
 outline: medium none !important;
-margin-right: 10px;
-margin-left: 10px;
+margin-right: 2px;
+margin-left: 2px;
 }
 
 
@@ -138,11 +152,16 @@ width: 120px;
 color: #fff;
 border-radius:10%;
 outline: medium none !important;
-margin-right: 10px;
-margin-left: 10px;
+margin-right: 2px;
+margin-left: 2px;
 }
 
-
+.imageloader{
+	
+	
+width:20px;
+height: 20px;
+}
 
 
 
