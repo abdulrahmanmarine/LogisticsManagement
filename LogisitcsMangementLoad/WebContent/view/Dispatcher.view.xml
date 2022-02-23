@@ -113,7 +113,8 @@
 				</l:Grid>
 
 				<Table id="tableItems" alternateRowColors="true"
-					items="{LPConfitems>/}">
+					items="{LPConfitems>/}"
+					itemPress="">
 					<headerToolbar>
 						<Toolbar>
 							<SearchField width="80%" search="onSearch" />
@@ -165,8 +166,7 @@
 							<Text text="{LPConfitems>ZuphrMblpo}" />
 							<Text text="{LPConfitems>ZuphrDescrip}" />
 							<Text text="{LPConfitems>ZuphrStatus}" />
-							<Button id="assignmentButton" press="onOpenAssignment" text="Assign"
-								class="sapUiSmallMarginEnd" icon="sap-icon://inventory" />
+		<Button text="Open Dialog" press="onOpenAssignment"></Button>
 
 						</ColumnListItem>
 					</items>

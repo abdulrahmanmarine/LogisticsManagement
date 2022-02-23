@@ -43,15 +43,12 @@ sap.ui.define([
 	    	  }
 	      },
 	      
-			onOpenAssignment : function (item) {
-				
-				var oSelectedItem= new sap.ui.model.json.JSONModel(item);
-				oSelectedItem.setDefaultBindingMode(sap.ui.model.BindingMode.OneWay);
-				alert(oSelectedItem.ZuphrStatus);
-				this.getView().setModel(oSelectedItem, "SelectedItem");
-				this._oDialogActivity = sap.ui.xmlfragment("helloDialog", "logisticsmanagementsystem.view.Assignment", this);
-				this.getView().addDependent(this._oDialogActivity);
-				this._oDialogActivity.open();
+			onOpenAssignment : function (oEvent) {
+
+				this._oDialogItem = new sap.ui.xmlfragment("assignmentFrag", "logisticsmanagementsystem.fragment.Assignment");
+				this.getView().addDependent(this._oDialogItem);
+				this._oDialogItem.open();
+
 			}
 
    });
